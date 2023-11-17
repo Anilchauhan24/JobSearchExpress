@@ -111,7 +111,7 @@ MongoClient.connect(Mongo_Url, (err, client) => {
 
     db = client.db("Joblist");
 
-    // Move the route declaration inside the callback
+    // Moving the route vale inside the callback
     app.post('/api/submit-form', async (req, res) => {
         try {
             const { name, email } = req.body;
